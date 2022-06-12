@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="stylesheet" href="../css/restyle.css">
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/johanna1.css">
+    <link rel="stylesheet" href="/css/admin.css">
+  <script src="https://kit.fontawesome.com/a885fb99c4.js" crossorigin="anonymous"></script>
+  <script src="./js/dropdown.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@200&display=swap" rel="stylesheet">
+  <script src='../js/navSlide.js' defer></script>
+  <script src='../js/quotes.js' defer></script>
+  <script src='../js/goDown.js' defer></script>
+  <script type=module src='./js/formPopUp.js' defer></script>
+
+  <title>BuroDeKuiper</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="grid-container">
+      <div class="header">
+        <div class="logo"><a href="/admin">
+            <p>BuroDeKuiper</p>
+          </a></div>
+
+        <div class="nav">
+          <div class='menu'><i class="fas fa-bars"></i></div>
+          <ul>
+            <li><a href="johanna-admin">Johanna</a></li>
+            <li><a href="watwerkt-admin">Wat werkt</a></li>
+            <li><a href="info-admin">Info</a></li>
+            <li><a href="contact-admin">Contact</a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+
+      <div class="body1">
+
+          <span class="h1 editBox" id="johanna.title1"><%=johanna.title1%></span>
+          </br></br>
+          <!-- use <%- %> insted of <%= %> so it doesnt escape HTML automatically and used </br> tags -->
+          <div class="editBox" id="johanna.text1"><%-johanna.text1%></div>
+
+
+                            <i id="arrowDown" class="fas fa-angle-double-down"></i>
+
+      </div>
+
+    </div>
+
+
+    <div class="body2">
+
+
+        <div class="textBottom1 editBox" id="johanna.text2">
+
+
+
+          <%-johanna.text2%>
+        </div>
+
+        <div class="imgBottom1">
+        <img src="../img/beach.JPG" alt="">
+        </div>
+      </div>
+
+      <div class="body3">
+        <div class="grid-box">
+           <div class="grid-box-title"><h1 class="editBox" id="johanna.title3"><%-johanna.title3%></h1></div>
+           <div class="flashing-quotes">
+              <p class="quote1 editBox" id="johanna.cit1"><%-johanna.cit1%></p>
+              <p class="quote2 editBox" id="johanna.cit2"><%-johanna.cit2%></p>
+              <p class="quote4 editBox" id="johanna.cit3"><%-johanna.cit3%></p>
+
+           </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="mobileNav">
+
+    <h1>Menu</h1>
+
+    <ul>
+      <li><a href="johanna-admin">Johanna</a></li>
+      <!--<li class='dropMobile'>
+          <div class="grid-list">
+          <a href="#" class='dropMobileA'>Wat werkt <!<i class="fas fa-sort-down"></i></a>
+            <ol class='dropDownMobile'>
+              <li><a href="./html/myStory">My story</a></li>
+              <li><a href="./html/progress">Web Dev Progress</a></li>
+            </ol>
+          </div>
+        </li>-->
+      <li><a href="watwerkt-admin" class='dropMobileA'>Wat werkt</a></li>
+      <li><a href="info-admin">Info</a></li>
+      <li><a href="contact-admin">Contact</a></li>
+    </ul>
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

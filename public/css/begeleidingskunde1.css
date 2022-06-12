@@ -1,0 +1,122 @@
+
+.header {
+  background-color: #8DC588;
+
+}
+
+.body1 {
+  background-color: #8DC588;
+  min-height: calc(100vh - 100px);
+  padding: 50px 300px 50px 300px;
+  font-size: 20px;
+  color: white;
+
+
+}
+
+.h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  padding-top: 50px;
+
+
+}
+
+.h2 {
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+}
+
+
+.h3 {
+  color: black;
+  font-style: italic;
+  font-size: 30px;
+}
+
+
+
+
+
+
+.paraGrid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.paraGrid ? div {
+
+}
+
+
+
+.image img {
+  display: block;
+  width: 150px;
+  margin-left: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #111;
+}
+
+
+@media(max-width: 1600px){
+  .body1{
+    padding: 0px 200px 50px 200px;
+  }
+
+
+}
+
+
+@media(max-width: 1200px){
+  .body1{
+    padding: 0px 100px 50px 100px;
+
+
+  }
+}
+
+
+@media(max-width: 850px){
+  .image img {
+    margin-left: 1em;
+    width: 130px;
+  }
+}
+
+@media(max-width: 850px){
+.paraGrid {
+    grid-template-columns: auto;
+
+
+  }
+
+.image img{
+  margin: 0em auto;
+  width: 150px;
+  margin-top: 1.5em;
+}
+
+}
+
+
+
+@media(max-width: 600px){
+  .body1{
+    padding: 0px 20px 50px 20px;
+    font-size: 17px;
+  }
+  .h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+  }
+
+}

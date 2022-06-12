@@ -1,0 +1,168 @@
+.adminMenu{
+  position: absolute;
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  left: 40%;
+  top: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #111;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.adminMenu:hover{
+ background-color: orange;
+ color: black;
+
+}
+
+.DRButton {
+  position: absolute;
+  display: block;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  left: 55%;
+  top: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #111;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.DRButton:hover{
+ background-color: orange;
+ color: black;
+
+}
+
+.editBox {
+  transition: .5s;
+  cursor: pointer;
+
+}
+
+.editBox:hover {
+  background-color: red;
+
+}
+
+
+.popUpDiv {
+
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  z-index: 10000;
+  background-color: #232323;
+  opacity: .9;
+  transition: ease-in-out .5s;
+  box-shadow: 0 0 5px #111;
+
+}
+
+
+.popUpDiv form {
+  border: 5px solid;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 7em 2em 3em 2em;
+  grid-template-rows: 10% 20% 40% 30%;
+  grid-template-columns: repeat(1, 600px);
+  grid-gap: 10px;
+
+}
+
+.closeBtn {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  transition: .5s;
+}
+
+.closeBtn:hover {
+  transform:scale(.8);
+}
+
+.popUpDiv form label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-weight: 600;
+}
+
+.label1 {
+  background-color: #444;
+  padding: .5em;
+  overflow-y: scroll;
+
+}
+
+.label1::-webkit-scrollbar {
+    width: 7px;
+}
+
+.label1::-webkit-scrollbar-track {
+    background-color: #c1c1c1;
+}
+
+.label1::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px #232323;
+}
+
+
+.popUpDiv form textarea {
+    height: 200px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    outline: none;
+    transition: .5s;
+    resize: none;
+}
+
+.popUpDiv form textarea:focus,
+.popUpDiv form textarea:hover {
+  box-shadow: 0 0 5px orange;
+    background-color: #c1c1c1;
+}
+
+.popUpDiv form button {
+    border: 1px solid;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+
+.popUpDiv form button:hover {
+  background-color: orange;
+
+}

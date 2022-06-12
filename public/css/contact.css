@@ -1,0 +1,65 @@
+.title {
+  background-color: #8DC588;
+  text-align: center;
+  padding: 3em;
+  color: white;
+}
+
+.topBody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-content: center;
+  grid-gap: 100px;
+  padding-top: 10vh;
+  grid-auto-rows: auto;
+  height: auto;
+
+
+}
+
+.topBody > div {
+ margin: 0 auto;
+}
+
+
+
+.column1 {
+  display: grid;
+  grid-auto-rows: 100px;
+  padding-top: 4em;
+
+}
+
+.column1 > div {
+  color: white;
+  font-size: 22px;
+
+
+}
+
+
+.column2 {
+}
+
+
+
+
+
+
+.image > img {
+  display: block;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px black;
+}
+
+
+@media(max-width: 900px) {
+  .topBody {
+    padding-top: 0em;
+  }
+
+  .title {
+    padding: 2em;
+  }
+}

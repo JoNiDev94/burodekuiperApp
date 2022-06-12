@@ -1,0 +1,19 @@
+Query works for POSt request --> order still messy
+
+Abandoned DR recovery for the moment as it has to be done on DB level
+
+Johanna JSON text1 is missing the right layout (enter etc)
+
+
+TODO:
+
+1. Convert text to DB in good layout (add /n etc) DONE
+2. Disaster recovery
+    Disaster recovery is not working, it will only work if entire app.js runs on same server and gets 1 or 0 from DB for DR, postpone this to enhancement instead of requirement
+3. Clean-up unnecessary code and improve structure
+4. Load entire app on a real webhosting server --> db setup for on own domain
+
+
+bugs:
+
+1. post cant be carried out twice
